@@ -1,0 +1,4 @@
+﻿Event Type,Location,Signal Timestamp,Bulletin Timestamp,Observer Class,Retrieval Lag (hrs),Source
+Rapid-onset: Hurricane Ida,USA (Gulf Coast),2021-08-28 12:00 UTC,2021-08-28 21:00 UTC,O1 (NOAA/NHC),9,https://www.weather.gov/media/publications/assessments/Hurricane_Ida_Service_Assessment.pdf
+Slow-burn: Siberian Heatwave,Russia (Arctic Siberia),6/20/2020,6/23/2020,O2 (WMO),72,https://wmo.int/media/news/reported-new-record-temperature-of-38degc-north-of-arctic-circle
+Cryospheric: Antarctic Sea Ice Collapse,Southern Ocean,9/10/2023,9/25/2023,O3 (NSIDC),360,https://nsidc.org/news-analyses/news-stories/antarctic-sea-ice-hits-record-low-maximum-extent-2023

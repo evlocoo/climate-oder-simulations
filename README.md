@@ -1,65 +1,128 @@
+Certainly. Here's the full `README.md` content in plain text—no code blocks, no boxes—ready for copy-paste:
+
+---
+
 # ODER-Retrieval-Simulations
-Code and data for "The ODER Framework: Modeling Forecast Retrieval Failure Across Institutional Actors"
-# ODER: Observer-Dependent Entropy Retrieval Framework
 
-This repository contains the simulation code, empirical calibration datasets, and documentation supporting the paper:
+Code, simulations, and documentation for:
+**"The ODER Framework: Modeling Forecast Retrieval Failure Across Institutional Actors"**
+Evlondo Cooper, 2025
 
-> **"The ODER Framework: Modeling Forecast Retrieval Failure Across Institutional Actors"**  
-> Submitted to *Earth's Future* (2024)
+---
 
-## 📜 Overview
+## Overview
 
-The ODER framework models forecast retrieval as an observer-specific entropy convergence process. It focuses not on forecast accuracy, but on who retrieves the signal—and when.
+The **Observer-Dependent Entropy Retrieval (ODER)** framework models climate forecast failure not as a problem of accuracy, but as a breakdown in signal recognition across institutional actors.
+This repository supports simulation, benchmarking, and interpretability of observer-specific retrieval dynamics.
 
-This repository supports:
-- Simulation-based empirical validation of retrieval divergence (Sections 3.2, 6)
-- Reproduction of the observer-specific entropy retrieval model (Equation 4)
-- Calibrated parameter sets from three real-world climate events:
-  - Hurricane Ida (2021)
-  - Siberian Heatwave (2020)
-  - Antarctic Sea Ice Collapse (2023)
+It includes:
 
-## 📂 Repo Structure
+* A fully executable simulation notebook that reproduces all benchmark figures from the paper
+* Hard-coded observer parameters from three real-world climate events
+* An interactive panel for testing γ, τ\_char, and entropy threshold parameters
+* A user-defined event tester for simulating real retrieval scenarios and their consequences
 
+---
 
-## 🔧 Dependencies
+## Repository Structure
 
-This repo uses:
-- Python 3.10+
-- NumPy
-- Matplotlib
-- Pandas (for data handling)
-- Jupyter (for interactive notebooks)
+```
+├── data/
+│   └── retrieval_lag_table.csv       # Calibration data for real-world benchmark events
+├── notebooks/
+│   └── climate_oder_retrieval.ipynb  # Main simulation notebook (fully self-contained)
+├── environment.yml                   # Reproducible environment file (Conda)
+├── .gitignore                        # Prevents notebook checkpoints, cache, system files
+├── LICENSE                           # MIT License
+└── README.md                         # This file
+```
 
-## 📈 Reproducing Figure 1
+---
 
-To generate the benchmark retrieval divergence across observer classes:
-1. Open `notebooks/Simulated_Retrieval_Divergence.ipynb`
-2. Run cells to load `data/retrieval_lag_table.csv`
-3. Simulate entropy convergence using parameters from Appendix A
-4. Output is plotted against threshold \( S_{\text{obs}} = 0.7 \)
+## Dependencies
 
-## 📁 Datasets
+The simulation environment requires:
 
-All parameter estimates are derived from public institutional sources:
-- NOAA/NHC bulletins and advisories (Ida)
-- NSIDC Sea Ice Index v3.0 (Antarctica)
-- WMO + Russian Hydromet logs (Siberia)
+* Python 3.10+
+* NumPy
+* Matplotlib
+* Pandas
+* Jupyter Notebook
+* Optional: `ipywidgets` (for interactive slider panel)
 
-See `data/retrieval_lag_table.csv` for lag timing and source links.
+To install:
 
-## 🔬 Scope & Disclaimer
+**Using Conda (recommended):**
 
-This repository supports simulation-based empirical validation only.  
-It does not contain full institutional-scale deployments or exhaustive parameter fitting.  
-For future validation and pilot implementation strategy, see Section 8 of the manuscript.
+conda env create -f environment.yml
+conda activate oder-env
 
-## 📘 Citation
+**Using pip (alternative):**
 
-If you use this repo, please cite:
+pip install numpy matplotlib pandas jupyter ipywidgets
 
-> Cooper, E. (2024). *The ODER Framework: Modeling Forecast Retrieval Failure Across Institutional Actors*. Submitted to *Earth’s Future*.
+---
 
-## 🔓 License
+## Running the Simulation
+
+Open the notebook:
+
+notebooks/climate\_oder\_retrieval.ipynb
+
+The notebook provides:
+
+* Reproduction of benchmark retrieval curves for O1, O2, O3 observer classes
+* Δτ tables for each event
+* Interactive sliders for testing retrieval parameter sensitivity
+* A user-defined event simulator (enter real UTC timestamps to test retrieval collapse)
+* Interpretation and mitigation guidance based on observer class and Δτ
+
+---
+
+## Benchmarked Events
+
+These three events are hard-coded into the simulation:
+
+| Event                      | Year | Observer Class           | Lag (hours) | Source                   |
+| -------------------------- | ---- | ------------------------ | ----------- | ------------------------ |
+| Hurricane Ida              | 2021 | O1 (Forecast desk)       | 9           | NOAA Service Assessment  |
+| Siberian Heatwave          | 2020 | O2 (Regional agency)     | 72          | WMO + Hydromet Reports   |
+| Antarctic Sea Ice Collapse | 2023 | O3 (Policy/Communicator) | 360         | NSIDC Sea Ice Index v3.0 |
+
+Full source metadata is included in `data/retrieval_lag_table.csv`.
+
+---
+
+## Usage Example
+
+To test a new retrieval scenario:
+
+1. Run all cells in the notebook.
+2. Scroll to **Section 7: User-defined event test**.
+3. Enter two UTC timestamps, e.g.:
+
+Signal timestamp: 2025-07-01T06:00:00Z
+Bulletin timestamp: 2025-07-01T14:00:00Z
+Observer class: O1
+
+4. The notebook will return:
+
+   * τ\_res (when that observer would have recognized the signal)
+   * Δτ (timing difference)
+   * Verdict (collapse or not)
+   * Interpretability layer (what it means and what could mitigate delay)
+
+---
+
+## Citation
+
+If you use this repository, please cite:
+
+Cooper, E. (2025). *The ODER Framework: Modeling Forecast Retrieval Failure Across Institutional Actors*.
+Available at: [https://doi.org/10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
+
+---
+
+## License
 
 This repository is released under the MIT License.

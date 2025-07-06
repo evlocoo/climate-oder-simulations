@@ -120,6 +120,8 @@ If you use this repository, please cite:
 Cooper, E. (2025). *The ODER Framework: Modeling Forecast Retrieval Failure Across Institutional Actors*.
 Available at: [https://doi.org/10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
 
+Evlondo, C. (2025). Climate ODER Retrieval Simulation: Benchmarking Forecast Recognition Across Institutional Observers (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.15824444
+
 ---
 
 ## License

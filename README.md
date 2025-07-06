@@ -1,7 +1,3 @@
-Certainly. Here's the full `README.md` content in plain text—no code blocks, no boxes—ready for copy-paste:
-
----
-
 # ODER-Retrieval-Simulations
 
 Code, simulations, and documentation for:
@@ -12,8 +8,11 @@ Evlondo Cooper, 2025
 
 ## Overview
 
-The **Observer-Dependent Entropy Retrieval (ODER)** framework models climate forecast failure not as a problem of accuracy, but as a breakdown in signal recognition across institutional actors.
+The Observer-Dependent Entropy Retrieval (ODER) framework models climate forecast failure not as a problem of accuracy, but as a breakdown in signal recognition across institutional actors.
 This repository supports simulation, benchmarking, and interpretability of observer-specific retrieval dynamics.
+
+Retrieval is modeled as a time-dependent convergence process governed by a logistic entropy uptake law (see Equation 3 in the manuscript).
+This formal structure is implemented in the notebook via the s_retr() function and used throughout to calculate recognition timing (τ_res), lag (Δτ), and retrieval collapse outcomes.
 
 It includes:
 

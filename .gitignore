@@ -1,0 +1,28 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Python environment files
+.env
+.venv
+*.egg-info/
+*.egg
+*.log
+
+# Conda
+conda-meta/
+*.lock
+
+# VS Code settings (optional, if collaborators use it)
+.vscode/
+
+# Jupyter runtime
+*.nbconvert.ipynb

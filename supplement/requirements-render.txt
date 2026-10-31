@@ -1,0 +1,2 @@
+-r requirements-notebook.txt
+nbconvert==7.17.1

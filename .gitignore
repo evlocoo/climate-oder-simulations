@@ -26,3 +26,5 @@ conda-meta/
 
 # Jupyter runtime
 *.nbconvert.ipynb
+.jupyter_deps/
+.jupyter_data/

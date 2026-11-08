@@ -9,8 +9,9 @@ nbclient==0.11.0
 ipykernel==7.3.0
 jupyter_client==8.10.0
 
-HTML rendering dependency:
+HTML rendering dependencies:
 nbconvert==7.17.1
+tinycss2==1.5.1
 
 This file records the tested environment; it is not a pip requirements file.
 Install requirements-notebook.txt for execution or requirements-render.txt

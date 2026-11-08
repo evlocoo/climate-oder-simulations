@@ -78,7 +78,7 @@ Paths below are relative to `supplement/`.
 
 ## Dependencies
 
-Use Python 3.12. Core calculations, tests, report generation, and notebook generation require only the standard library. Notebook execution requires `nbclient`, `nbformat`, `ipykernel`, and their dependencies, including IPython for table display. HTML export additionally requires `nbconvert`.
+Use Python 3.12. Core calculations, tests, report generation, and notebook generation require only the standard library. Notebook execution requires `nbclient`, `nbformat`, `ipykernel`, and their dependencies, including IPython for table display. HTML export additionally requires `nbconvert` and `tinycss2`.
 
 From the directory containing this README, install the dependencies for notebook execution and HTML export:
 

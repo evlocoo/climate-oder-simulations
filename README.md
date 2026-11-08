@@ -1,6 +1,6 @@
 # Climate ODER Computational Supplement
 
-Version 2.0.0 accompanies Evlondo Cooper III's *Climate ODER: Information, Coordination, and the Time to Act*.
+This package accompanies the paper [*Climate ODER: Information, Coordination, and the Time to Act*](https://www.preprints.org/manuscript/202503.2255/v3). It follows information from a heat-response briefing through distributed coordination, temporal preservation, constrained responses, and deadline-limited recovery.
 
 The computational supplement checks specified finite examples and bounded enumerations concerning coordination, information preservation, timing, and stochastic support. The manuscript provides the general mathematical arguments.
 
@@ -135,8 +135,8 @@ The [historical v1.0.1 release](https://github.com/evlocoo/climate-oder-simulati
 
 ## Citation and license
 
-- **Paper:** Cooper III, Evlondo. (2026). *Climate ODER: Information, Coordination, and the Time to Act*.
-- **Supplement:** Cooper III, Evlondo. (2026). *Climate ODER Computational Supplement* (Version 2.0.0). GitHub. https://github.com/evlocoo/climate-oder-simulations.
+- **Paper:** Cooper III, Evlondo (2026). *Climate ODER: Information, Coordination, and the Time to Act*. Preprints.org, version 3, posted November 4, 2026. [doi:10.20944/preprints202503.2255.v3](https://doi.org/10.20944/preprints202503.2255.v3).
+- **Supplement:** Cooper III, Evlondo (2026). *Climate ODER Computational Supplement* (Version 2.0.0). GitHub. [Release and reproduction materials](https://github.com/evlocoo/climate-oder-simulations/releases/tag/v2.0.0).
 - **Historical simulations:** Cooper, Evlondo (2025). *Climate ODER Retrieval Simulation: Benchmarking Forecast Recognition Across Institutional Observers*, v1.0.1. Zenodo. [doi:10.5281/zenodo.15824444](https://doi.org/10.5281/zenodo.15824444). This DOI identifies the earlier simulation package only.
 
 The supplement's software and associated documentation are covered by the included [MIT license](LICENSE).
